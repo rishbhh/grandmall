@@ -224,3 +224,4 @@ ScrollTrigger.config({
 }
 
 const slideshow = new Slideshow(document.querySelector('.slideshow'));
+
