@@ -1,58 +1,18 @@
 gsap.registerPlugin(ScrollTrigger);
-
-let locoScroll = new LocomotiveScroll({
-    el: document.querySelector(".smooth-scroll"),
-    inertia: 0.8,
-    smooth: true,
-    getDirection: true,
-    
-    mobile: {
-      breakpoint: 0,
-      smooth: true,
-      getDirection: true,
-    },
-    tablet: {
-      breakpoint: 0,
-      smooth: true,
-      getDirection: true,
-    },
-});
-locoScroll.on("scroll", ScrollTrigger.update);
-
-ScrollTrigger.scrollerProxy(".smooth-scroll", {
-    scrollTop(value) {
-        return arguments.length ?
-            locoScroll.scrollTo(value, 0, 0) :
-            locoScroll.scroll.instance.scroll.y;
-    },
-    getBoundingClientRect() {
-        return {
-            top: 0,
-            left: 0,
-            width: window.innerWidth,
-            height: window.innerHeight
-        };
-    },
-
-    // follwoing line is not required to work pinning on touch screen
-
-    pinType: document.querySelector(".smooth-scroll").style.transform ?
-        "transform" : "fixed"
-});
-
-
-
-locoScroll.on("scroll", ScrollTrigger.update);
-ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
-
-ScrollTrigger.refresh();
-
-ScrollTrigger.config({
-    autoRefreshEvents: 'visibilitychange,DOMContentLoaded,load',
-});
-
-
-
+document.addEventListener("DOMContentLoaded", function(){
+  window.addEventListener('scroll', function() {
+      if (window.scrollY > 100) {
+        document.getElementById('navbar_top').classList.add('fixed-top');
+        // add padding top to show content behind navbar
+        navbar_height = document.querySelector('.navbar').offsetHeight;
+        // document.body.style.paddingTop = navbar_height + 'px';
+      } else {
+        document.getElementById('navbar_top').classList.remove('fixed-top');
+         // remove padding top from body
+        document.body.style.paddingTop = '0';
+      } 
+  });
+}); 
   
   
   // The Slideshow class.
@@ -225,3 +185,14 @@ ScrollTrigger.config({
 
 const slideshow = new Slideshow(document.querySelector('.slideshow'));
 
+// Gsap
+gsap.to(".horizontal", {
+  scrollTrigger:{
+    trigger: ".horizontal", 
+    start: "top bottom", 
+    end: "bottom top", 
+    scrub: 1,
+    markers: true
+  },
+  x: 500
+},"-=1")
