@@ -189,10 +189,37 @@ const slideshow = new Slideshow(document.querySelector('.slideshow'));
 gsap.to(".horizontal", {
   scrollTrigger:{
     trigger: ".horizontal", 
-    start: "top bottom", 
+    start: "100% bottom", 
     end: "bottom top", 
     scrub: 1,
-    markers: true
+    // markers: true
   },
   x: 500
 },"-=1")
+
+gsap.to(".horizontal2", {
+  scrollTrigger:{
+    trigger: ".horizontal2", 
+    start: "100% bottom", 
+    end: "bottom top", 
+    scrub: 1,
+    // markers: true
+  },
+  x: -500
+},"-=1")
+
+gsap.set('.about_text_p', {autoAlpha: 1})
+
+    gsap.utils.toArray(".about_text").forEach((section, i) => {
+      gsap.from(section.querySelectorAll(".about_text_p"),2, {
+        scrollTrigger: {
+          trigger: section,
+          // markers: true,
+          start: "200px bottom"
+        },
+        yPercent: 200,
+        duration: 0.5,
+        opacity:0,
+        // ease: "easeInOut"
+      },"-=0.8");
+		});
