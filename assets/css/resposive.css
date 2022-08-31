@@ -2,6 +2,9 @@
     .navbar-expand-lg .navbar-collapse{
         width: 100%;
     }
+    .district-desktop{
+        display: block;
+    }
 }
 @media screen and (max-width:1440px) {
     
@@ -55,5 +58,113 @@
     }
     .district-desktop{
         display: none;
+    }
+    .mobile-se{
+        display: block;
+    }
+
+    /* offer*/
+    .third-sec {
+        padding: 20% 0;
+        position: relative;
+        margin-top: 0 !important;
+    }
+    .circle-el {
+        top: 10px;
+        right: -5%;
+    }
+    .circle-el img,  .circle-el2 img{
+        max-width: 140px;
+    }
+    .circle-el2{
+        top: 70px;
+        left: -5%;
+    }
+    .mr {
+        margin-left: 7px;
+        margin-right: 0px !important;
+    }
+    .offers-section .circle-el {
+        position: absolute;
+        bottom: -60px;
+        top: unset;
+        right: -20px;
+        animation: circleSpin 8s linear infinite;
+    }
+    .left-content {
+        padding-right: 0px;
+        margin-top: 36px;
+    }
+    .left-content h6{
+        margin-bottom: 20px;
+    }
+    .left-content p {
+        color: #000000;
+        margin-bottom: 30px;
+    }
+
+
+    /* brand */
+    .brand-sec {
+        padding: 28% 0;
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 8%;
+    }
+    .heading {
+        font-family: "Helvetica73-b";
+        font-size: 54px;
+        text-align: center;
+        color: #0E0E0E;
+    }
+    .logo-br {
+        padding: 20px 20px;
+    }
+    .cl {
+        position: absolute;
+        top: 144px;
+        right: 80px;
+    }
+    .cl p img{
+        width: 120px;
+    }
+    .cl p span {
+        position: absolute;
+        top: 36px;
+        left: 36px;
+    }
+    .cl p span img {
+        animation: none;
+        width: 49px;
+    }
+    .mini-heading {
+        font-family: 'Helvetica63-m';
+        font-size: 45px;
+        color: #FFFFFF;
+        padding-right: 0px;
+        margin-bottom: 10%;
+    }
+    .servi-box {
+        margin-bottom: 0%;
+        margin-top: 20%;
+    }
+    .servi-box img {
+        width: 50px;
+        float: none;
+        margin-bottom: 20px;
+    }
+    footer {
+        padding: 18% 0;
+        text-align: center;
+    }
+    .social-links{
+        margin-bottom: 20px;
+    }
+    .footer-link, .footer-cont{
+        padding-left: 0;
+    }
+    .bottom-footer {
+        padding: 30px 10px;
+        text-align: center;
     }
 }

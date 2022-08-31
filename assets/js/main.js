@@ -208,18 +208,39 @@ gsap.to(".horizontal2", {
   x: -500
 },"-=1")
 
-gsap.set('.about_text_p', {autoAlpha: 1})
+// gsap.set('.about_text_p', {autoAlpha: 1})
 
-    gsap.utils.toArray(".about_text").forEach((section, i) => {
-      gsap.from(section.querySelectorAll(".about_text_p"),2, {
-        scrollTrigger: {
-          trigger: section,
-          // markers: true,
-          start: "200px bottom"
-        },
-        yPercent: 200,
-        duration: 0.5,
-        opacity:0,
-        // ease: "easeInOut"
-      },"-=0.8");
-		});
+//     gsap.utils.toArray(".about_text").forEach((section, i) => {
+//       gsap.from(section.querySelectorAll(".about_text_p"),2, {
+//         scrollTrigger: {
+//           trigger: section,
+//           // markers: true,
+//           start: "200px bottom"
+//         },
+//         yPercent: 200,
+//         duration: 0.5,
+//         opacity:0,
+//         // ease: "easeInOut"
+//       },"-=0.8");
+// 		});
+
+
+// Swiper
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  effect: 'fade',
+  fadeEffect: {
+    crossFade: true
+  },
+  
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
