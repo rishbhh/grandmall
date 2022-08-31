@@ -1337,6 +1337,32 @@ margin-bottom: 30px;
   margin-left: 30px;
 }
 
+.subs input{
+  border: none;
+    background: transparent;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    padding: 10px;
+    width: 350px;
+}
+.subs input:focus-visible {
+  outline: -webkit-focus-ring-color auto 0px;
+}
+.subs input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #fff;
+  opacity: 1; /* Firefox */
+}
+.subs span button{
+  background: #fff;
+  border-radius: 82px;
+  font-family:'Helvetica73-b';
+  font-size: 16px;
+  border: none;
+  letter-spacing: 0.09em;
+  color: #000;
+  padding: 15px 30px;
+  margin-left: 30px;
+}
 
 footer{
   padding: 8% 0;
