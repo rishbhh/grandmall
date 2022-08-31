@@ -1,5 +1,7 @@
 @media screen and (max-width:1920px) {
-    
+    .navbar-expand-lg .navbar-collapse{
+        width: 100%;
+    }
 }
 @media screen and (max-width:1440px) {
     
