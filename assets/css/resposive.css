@@ -508,4 +508,14 @@
   .subscribe .cl{
     display: none;
   }
+  .subs{
+    text-align: center;
+  }
+  .subs input{
+    width: 100%;
+  }
+  .subs span button{
+    margin-top: 30px;
+    margin-left: 0px;
+  }
 }
