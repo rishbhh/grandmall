@@ -7,17 +7,162 @@
     }
 }
 @media screen and (max-width:1440px) {
-    
+    header .navbar .navbar-nav .nav-item {
+        padding: 23px 20px;
+    }
+    .hero-rtext a{
+        width: 100%;
+    font-size: 17px;
+    }
+    .hero-rtext{
+        width: 34.5%;
+    }
+    .circle-el {
+        position: absolute;
+        top: -29px;
+        right: -2%;
+        animation: circleSpin 8s linear infinite;
+    }
+    .circle-el2 {
+        top: 30px;
+        left: -1%;
+    }
+    .offers-section .circle-el {
+        position: absolute;
+        bottom: -160px;
+        top: unset;
+        right: 20px;
+        
+        animation: circleSpin 8s linear infinite;
+    }
 }
 @media screen and (max-width:1280px) {
-    
+    header .navbar .navbar-nav .nav-item {
+        padding: 23px 10px;
+    }
+    .second-sec h2 {
+        font-size: 82px;
+    }
+     /* ================ Offer Section =================== */
+  .offer-box .offer-heading-text {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 27px;
+    font-family: 600;
+    padding: 0 30px;
+  }
+
+  .overlay:hover .bottom-content {
+    left: 7%;
+  }
+  /* ================ Offer Section End =================== */
+  /* ============= Offers Details Section =================== */
+  .offer-d-img-section {
+    padding: 0;
+  }
+  /* ============= Offers Details Section End =================== */
+
+  /* ============== Shop Section ================ */
+
+  .filter-form__item_text #filter_brands {
+    right: 20px;
+    left: unset;
+  }
+
+  /* ============== Shop Section End ================ */
+
+  /* ============== Shop Details Section ================== */
+
+  .owl-carousel .owl-item img {
+    padding: 0px;
+  }
+  /* ============== Shop Details Section End ================== */
 }
 /* @media screen and (max-width:1920px) {
     
 } */
 
 @media screen and (max-width:992px) {
-    
+    /* ================ Offer Section =================== */
+  .offer-box .offer-heading-text {
+    font-size: 25px;
+  }
+  .offer-sub-text {
+    font-size: 15px;
+  }
+  .bottom-content {
+    text-align: center;
+  }
+  .overlay:hover .bottom-content {
+    left: 0%;
+  }
+
+  /* ==================== Offer Section End ================ */
+
+  /* ============= Offers Details Section =================== */
+  .offer-d-img-section {
+    padding: 0;
+  }
+  .right-section-content {
+    padding: 0;
+  }
+  .offer-section-sub-text {
+    padding-top: 5px !important;
+  }
+  /* ============= Offers Details Section End =================== */
+
+  /* ===========  Service Section ================= */
+  .get-content {
+    text-align: center;
+    margin: 60px 0;
+  }
+  .get-in {
+    padding: 15% 0;
+  }
+  .subscribe .black {
+    display: none;
+  }
+  /* ===========  Service Section End ================= */
+
+  /* =============== Shop Section =============== */
+  .input-sub-content {
+    padding: 0 !important;
+    margin-bottom: 15px;
+  }
+  /* =============== Shop Section End =============== */
+
+  /* ============ Shop Details Section ================ */
+  .owl-carousel .owl-item img {
+    width: 100%;
+    height: 100%;
+    padding: 0px 0px;
+  }
+  .right-section-img {
+    width: 80px;
+    margin: 0;
+    padding-top: 25px;
+  }
+  .right-section-first-text {
+    font-size: 20px;
+  }
+  .right-section-second-text {
+    font-size: 20px;
+  }
+  .right-section-sub-text p {
+    font-size: 17px;
+    font-family: "Inter", sans-serif;
+    letter-spacing: 1px;
+  }
+  .contact-left-section .contact-anchor-link {
+    font-size: 17px;
+  }
+  .direction-right-section .direction-anchor-link {
+    font-size: 17px;
+  }
+  .direction-right-section .direction-bottom-text {
+    font-size: 17px;
+  }
+  /* ============ Shop Details Section End ================ */
 }
 @media screen and (max-width:767px) {
     .hero-section{
@@ -167,4 +312,197 @@
         padding: 30px 10px;
         text-align: center;
     }
+    /* ============ Offer Section ================== */
+  .middle__content .offer-sub-heading-text {
+    padding-left: 0 !important;
+  }
+  .middle__content {
+    text-align: center;
+  }
+  .input-sub-content {
+    margin-bottom: 10px;
+  }
+  .offer-sub-content {
+    padding-bottom: 10px !important;
+  }
+  /* ============ Offer Section End ================== */
+
+  /* ============= Offers Details Section =================== */
+  .offer-d-img-section {
+    padding: 0 !important;
+  }
+  .right-section-content {
+    padding: 0 !important;
+  }
+  .offer-section-first-text {
+    font-size: 20px;
+    text-align: center;
+  }
+  .offer-section-second-text {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .offer-section-third-text {
+    font-size: 14px;
+    padding-top: 10px;
+    text-align: center;
+  }
+
+  .offer-section-sub-text {
+    padding-top: 0px !important;
+    padding: 0 !important;
+    text-align: center;
+    font-size: 12px;
+  }
+  .direction-right-text {
+    text-align: center;
+  }
+  .right-direction-section-top-content {
+    text-align: center;
+  }
+  .offer-d-social-content {
+    padding-top: 35px;
+    justify-content: center;
+  }
+  .offer-button-section {
+    text-align: center;
+    padding-top: 60px;
+  }
+  /* ============= Offers Details Section End =================== */
+
+  /* ===========  Service Section ================= */
+
+  .filter-heading {
+    font-size: 40px;
+  }
+  .service-left-heading {
+    font-size: 30px;
+    text-align: center;
+  }
+  #service-left-heading {
+    padding-right: 0 !important;
+  }
+  .accordion {
+    padding-top: 30px;
+  }
+  .get-in .get-content h4 {
+    color: #000000;
+    font-size: 33px;
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+  .get-in {
+    padding-top: 25%;
+  }
+
+  .get-content {
+    margin: 60px 0;
+  }
+  .subscribe .black {
+    display: none;
+  }
+  .subscribe {
+    padding: 10% 10%;
+  }
+
+  .subscribe .subs h2 {
+    font-size: 32px;
+    padding-right: 0;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .subs form input {
+    width: 300px;
+  }
+  .subs form span button {
+    margin-left: 75px;
+    margin-top: 30px;
+  }
+
+  /* ===========  Service Section End ================= */
+
+  /* =============== Shop Section =============== */
+  .input-sub-content {
+    padding: 0 !important;
+    margin-bottom: 10px;
+  }
+  .filter-form__item_text #filter_brands {
+    left: unset;
+    right: 20px;
+  }
+  /* =============== Shop Section End =============== */
+
+  /* =============== Shop Details Section ================ */
+  .owl-carousel .owl-item img {
+    padding: 0px;
+  }
+  .right-section-img {
+    width: 60px;
+    margin: 0 auto;
+    padding-top: 30px;
+  }
+
+  .right-section-sub-text {
+    width: 100%;
+    text-align: center;
+  }
+  .right-section-sub-text p {
+    font-size: 12px;
+  }
+
+  .right-section-top-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .contact-left-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .shop-button-section {
+    text-align: center;
+  }
+
+  .direction-right-section {
+    margin-top: 20px;
+  }
+  .direction-right-section .direction-bottom-text {
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .contact-section {
+    margin-top: 20px !important;
+  }
+  .right-section-first-text {
+    font-size: 15px;
+  }
+  .right-section-second-text {
+    font-size: 15px;
+  }
+  .contact-left-section .contact-anchor-link {
+    font-size: 15px;
+  }
+  .contact-left-text {
+    font-size: 17px;
+    text-transform: uppercase;
+  }
+  .direction-right-text {
+    text-align: center;
+    font-size: 17px;
+  }
+  .direction-right-section .direction-anchor-link {
+    font-size: 15px;
+  }
+  .right-direction-section-top-content {
+    padding-top: 10px;
+  }
+  /* =============== Shop Details Section End ================ */
 }
