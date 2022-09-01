@@ -8,8 +8,11 @@
     .nav-drill{
       display: none;
     }
-    .hamburger {
+    .mobile-h {
       display: none;
+    }
+    .swiper-button-next, .swiper-button-prev,.swiper-pagination{
+      z-index: 1;
     }
 }
 @media screen and (max-width:1440px) {
@@ -89,6 +92,31 @@
 } */
 
 @media screen and (max-width:992px) {
+  .nav-drill{
+    display: block;
+  }
+  .mobile-h{
+    display: block;
+  }
+  .mobile-h{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 20px;
+    z-index: 9;
+  }
+  .mobile-h.fixed-top{
+    background: #0E0E0E;
+    z-index: 9;
+  }
+  header .mobile-h .navbar-brand{
+    margin: 0;
+  }
+  .hamburger{
+    font-size: 42px;
+    color: #fff;
+  }
     /* ================ Offer Section =================== */
   .offer-box .offer-heading-text {
     font-size: 25px;
@@ -176,7 +204,9 @@
   }
   /* Mobile Navigation*/
 
-
+  .hamburger{
+    display: block;
+  }
 .nav-top {
   display: flex;
   align-items: center;
@@ -210,9 +240,9 @@
   display: flex;
   position: fixed;
   z-index: 100;
-  top: 0;
+  top: 51px;
   right: 0;
-  width: 250px;
+  width: 100%;
   height: 100vh;
   background-color: #fff;
   overflow-y: auto;
@@ -220,20 +250,26 @@
   -webkit-overflow-scrolling: touch;
   transition: 0.45s;
 }
-.nav-items {
+.nav-drill .nav-items {
   flex: 0 0 100%;
+  padding-left: 0;
+}
+.nav-drill .nav-item{
+  padding: 20px 0;
 }
 .nav-item:not(:last-child) {
   border-bottom: solid 1px #daf9f4;
 }
-.nav-link {
+.nav-drill .nav-link {
   display: block;
-  padding: 0.875em 1em;
-  background-color: #fff;
-  color: #20b49c;
-  font-size: 1rem;
+  padding: 0 1em;
+  /* background-color: #fff; */
+  color: #000;
+  position: relative;
+  font-size: 18px;
+  letter-spacing: 1px;
   line-height: 1.5em;
-  font-weight: 300;
+font-family: 'Helvetica63-m';
 }
 .nav-expand-content {
   position: absolute;
@@ -245,18 +281,19 @@
   background-color: #daf9f4;
   transition: 0.3s;
   visibility: hidden;
+  z-index: 2;
 }
 .nav-expand-content .nav-item:not(:last-child) {
-  border-bottom: solid 1px #20b49c;
+  border-bottom: solid 1px #00000026;
 }
-.nav-expand-content .nav-link {
+/* .nav-expand-content .nav-link {
   background-color: #daf9f4;
-}
+} */
 .nav-expand-content .nav-back-link {
   display: flex;
   align-items: center;
-  background-color: #20b49c !important;
-  color: #fff;
+  /* background-color: #20b49c !important; */
+  color: #000;
 }
 .nav-expand-content .nav-back-link::before {
   content: "chevron_left";
@@ -270,6 +307,8 @@
 .nav-expand-link::after {
   content: "chevron_right";
   flex: 0 1 auto;
+  font-size: 22px;
+  position: absolute;
   font-family: "Material Icons";
 }
 .nav-expand.active > .nav-expand-content {
@@ -277,17 +316,9 @@
   visibility: visible;
 }
 .nav-expand .nav-expand-content {
-  background-color: #daf9f4;
+  background-color: #fff;
 }
-.nav-expand .nav-expand-content .nav-link {
-  background-color: #daf9f4;
-}
-.nav-expand .nav-expand-content .nav-expand-content {
-  background-color: #aff1e6;
-}
-.nav-expand .nav-expand-content .nav-expand-content .nav-link {
-  background-color: #aff1e6;
-}
+/* 
 .nav-expand .nav-expand-content .nav-expand-content .nav-expand-content {
   background-color: #84e9d9;
 }
@@ -299,14 +330,14 @@
 }
 .nav-expand .nav-expand-content .nav-expand-content .nav-expand-content .nav-expand-content .nav-link {
   background-color: #59e1cb;
-}
+} */
 header .navbar{
   display: none;
 }
 
 /* Hero */
     .hero-section{
-        padding-top: 32%;
+        padding-top: 31%;
     }
     .hero-text{
         text-align: center;
@@ -322,10 +353,11 @@ header .navbar{
         height: 68vh;
     }
     .slider-bt {
-        position: relative;
-        width: 96%;
-        margin: auto;
-        margin-top: 6%;
+      position: absolute;
+      width: 96%;
+      margin: auto;
+      margin-top: 6%;
+      bottom: 49px;
     }
     /* Second secontion */
     .second-sec{
@@ -349,8 +381,14 @@ header .navbar{
     }
 
     /* offer*/
+    .offers-section{
+      margin-top: 10%;
+    }
+    .get-right{
+      display: none;
+    }
     .third-sec {
-        padding: 20% 0;
+        padding: 8% 0;
         position: relative;
         margin-top: 0 !important;
     }
@@ -360,10 +398,12 @@ header .navbar{
     }
     .circle-el img,  .circle-el2 img{
         max-width: 140px;
+        display: none;
     }
     .circle-el2{
         top: 70px;
         left: -5%;
+        display: none;
     }
     .mr {
         margin-left: 7px;

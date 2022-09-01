@@ -13,6 +13,20 @@ document.addEventListener("DOMContentLoaded", function(){
       } 
   });
 }); 
+document.addEventListener("DOMContentLoaded", function(){
+  window.addEventListener('scroll', function() {
+      if (window.scrollY > 100) {
+        document.getElementById('navbar_top2').classList.add('fixed-top');
+        // add padding top to show content behind navbar
+        navbar_height = document.querySelector('.navbar').offsetHeight;
+        // document.body.style.paddingTop = navbar_height + 'px';
+      } else {
+        document.getElementById('navbar_top2').classList.remove('fixed-top');
+         // remove padding top from body
+        document.body.style.paddingTop = '0';
+      } 
+  });
+}); 
   
   
   // The Slideshow class.
@@ -321,4 +335,27 @@ navExpand.forEach(item => {
 const ham = document.getElementById('ham');
 ham.addEventListener('click', function () {
   document.body.classList.toggle('nav-is-toggled');
+});
+
+$(function() {
+  $('a[href="#search"]').on("click", function(event) {
+    event.preventDefault();
+    $("#search").addClass("open");
+    $('#search > form > input[type="search"]').focus();
+  });
+
+  $("#search, #search button.close").on("click keyup", function(event) {
+    if (
+      event.target == this ||
+      event.target.className == "close" ||
+      event.keyCode == 27
+    ) {
+      $(this).removeClass("open");
+    }
+  });
+
+  $("form").submit(function(event) {
+    event.preventDefault();
+    return false;
+  });
 });

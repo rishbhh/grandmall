@@ -5,6 +5,9 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0">
     <!-- CSS only -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css?family=Material+Icons%7CMaterial+Icons+Outlined%7CMaterial+Icons+Two+Tone%7CMaterial+Icons+Round%7CMaterial+Icons+Sharp" rel="stylesheet">
     <link
       rel="stylesheet"
@@ -22,8 +25,15 @@
   <body>
     <!-- Header -->
     <header>
-      <span class="hamburger material-icons" id="ham">menu</span>
-      <nav id="navbar_top" class="navbar navbar-expand-lg " >
+      <div id="navbar_top2" class="mobile-h">
+        <span class="hamburger material-icons" id="ham">menu</span>
+        <a class="navbar-brand" href="./">
+          <img class="w" src="/assets/images/lo-w.png" alt="">
+          <img class="b" src="/assets/images/lo-b.png" alt="">
+        </a>
+      </div>
+    
+      <nav id="navbar_top" class="navbar navbar-expand-lg fix" >
         <div class="container-fluid">
           </button>
           <!-- <a class="navbar-brand" href="./">
@@ -125,21 +135,28 @@
               <li class="nav-item">
                 <a class="nav-link" href="#">Offers</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Event</a>
+              </li>
               <a class="navbar-brand" href="./">
                 <img class="w" src="/assets/images/lo-w.png" alt="">
                 <img class="b" src="/assets/images/lo-b.png" alt="">
               </a>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Event</a>
-              </li>
+              
               <li class="nav-item">
                 <a class="nav-link" href="#">Services</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About us</a>
+                <a class="nav-link" href="#">About Us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact Us</a>
+                <a class="nav-link" href="#">blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#search"><i class="fas fa-regular fa-magnifying-glass"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="tel:+231 2323 44222"><i class="fas fa-regular fa-phone"></i></a>
               </li>
               
             </ul>
@@ -148,156 +165,140 @@
       </nav>
 
       <!-- Mobile -->
-      <nav id="navbar_top" class="nav-drill">
+      <nav  class="nav-drill fix">
         <ul class="nav-items nav-level-1">
           <li class="nav-item nav-expand">
             <a class="nav-link nav-expand-link" href="#">
-              Menu
+              Shop
             </a>
             <ul class="nav-items nav-expand-content">
               <li class="nav-item">
                 <a class="nav-link" href="#">
-                  Level 2
-                </a>
-              </li>
-              <li class="nav-item nav-expand">
-                <a class="nav-link nav-expand-link" href="#">
-                  Menu
-                </a>
-                <ul class="nav-items nav-expand-content">
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">
-                      Level 3
-                    </a>
-                  </li>
-                  <li class="nav-item nav-expand">
-                    <a class="nav-link nav-expand-link" href="#">
-                      Menu
-                    </a>
-                    <ul class="nav-items nav-expand-content">
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">
-                          Level 4
-                        </a>
-                      </li>
-                      <li class="nav-item nav-expand">
-                        <a class="nav-link nav-expand-link" href="#">
-                          Menu
-                        </a>
-                        <ul class="nav-items nav-expand-content">
-                          <li class="nav-item">
-                            <a class="nav-link" href="#">
-                              Level 5 Directory
-                            </a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="#">
-                              Level 5 Contact
-                            </a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="#">
-                              Level 5 Quick links
-                            </a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="#">
-                              Level 5 Launchpad
-                            </a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">
-                          Level 4 Directory
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">
-                          Level 4 Contact
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">
-                          Level 4 Quick links
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">
-                          Level 4 Launchpad
-                        </a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">
-                      Level 3 Directory
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">
-                      Level 3 Contact
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">
-                      Level 3 Quick links
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">
-                      Level 3 Launchpad
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  Level 2 Directory
+                 Adidas
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">
-                  Level 2 Contact
+                  Aldo
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">
-                  Level 2 Quick links
+                  Black & White
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">
-                  Level 2 Launchpad
+                  Black Panther
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  Celio
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  Charles Trywhitt
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  Chuxel
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  Clarks
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  Dune
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item nav-expand">
+            <a class="nav-link nav-expand-link" href="#">
+              Dine
+            </a>
+            <ul class="nav-items nav-expand-content">
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+            D-Exclusive
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  Michael Terrace
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  South 66
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  Wakkis Hospitality
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item nav-expand">
+            <a class="nav-link nav-expand-link" href="#">
+              Entertain
+            </a>
+            <ul class="nav-items nav-expand-content">
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  Filmhouse
                 </a>
               </li>
             </ul>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">
-              Directory
+              Offers
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">
-              Contact
+              Event
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">
-              Quick links
+              Services
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">
-              Launchpad
+              About Us
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              Contact Us
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              Blog
             </a>
           </li>
         </ul>
       </nav>
     </header>
     <!-- Header -->
-
+    <div id="search">
+      <button type="button" class="close">×</button>
+      <form>
+        <input type="search" value="" placeholder="SEARCH KEYWORD(s)" />
+        <button type="submit" class="btn btn-primary">Search</button>
+      </form>
+    </div>
     <main>
 
       <div class="warpper">
@@ -307,19 +308,19 @@
             <img src="/assets/images/hero-logo.png" alt="logo-bg" />
           </div>
           <div class="row">
-            <div class="col-lg-3">
+            <div class="col-lg-2 ">
               <div class="hero-text">
                 <h6>SHOP OPENS</h6>
                 <p>10:00am to 9:30 pm</p>
               </div>
             </div>
-            <div class="col-lg-9">
+            <div class="col-lg-10 ">
               <div class="swiper-container slideshow">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide slide">
                     <div
                       class="slide-image">
-                      <img src="https://images.unsplash.com/photo-1538083024336-555cf8943ddc?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=66b476a51b19889e13182c0e4827af18&auto=format&fit=crop&w=1950&q=80">
+                      <img src="/assets/images/slide1.png">
                     </div>
                     <div class="hero-rtext">
                       <h6 class="slide-title">Port Harcourt's most preferred shopping, food & entertainment
@@ -332,7 +333,7 @@
                   <div class="swiper-slide slide">
                     <div
                       class="slide-image">
-                      <img src="https://images.unsplash.com/photo-1538083024336-555cf8943ddc?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=66b476a51b19889e13182c0e4827af18&auto=format&fit=crop&w=1950&q=80">
+                      <img src="/assets/images/slide2.png">
                     </div>
                     <div class="hero-rtext">
                       <h6 class="slide-title ">Port Harcourt's most preferred shopping, food & entertainment
@@ -345,7 +346,7 @@
                   <div class="swiper-slide slide">
                     <div
                       class="slide-image">
-                      <img src="https://images.unsplash.com/photo-1538083024336-555cf8943ddc?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=66b476a51b19889e13182c0e4827af18&auto=format&fit=crop&w=1950&q=80">
+                      <img src="/assets/images/slide3.png">
                     </div>
                    <div class="hero-rtext">
                       <h6 class="slide-title ">Port Harcourt's most preferred shopping, food & entertainment
