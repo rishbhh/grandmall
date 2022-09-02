@@ -232,7 +232,45 @@ header .navbar .navbar-nav > li.active > a:focus {
 .current_link{
   color: red;
 }
+.whatsapp-button{
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  z-index: 99;
+  background-color: #25d366;
+  border-radius: 50px;
+  color: #ffffff;
+  text-decoration: none;
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  -webkit-box-shadow: 0px 0px 25px -6px rgba(0,0,0,1);
+  -moz-box-shadow: 0px 0px 25px -6px rgba(0,0,0,1);
+  box-shadow: 0px 0px 25px -6px rgba(0,0,0,1);
+  animation: effect 5s infinite ease-in;
+}
 
+@keyframes effect {
+  20%, 100% {
+      width: 50px;
+      height: 50px;
+      font-size: 30px;
+  }
+  0%, 10%{
+      width: 55px;
+      height: 55px;
+      font-size: 35px;
+  }
+  5%{
+      width: 50px;
+      height: 50px;
+      font-size: 30px;
+  }
+}
 
 
 
@@ -2371,7 +2409,7 @@ font-family: 'Helvetica63-m';
   left: 0px;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgb(0, 0, 0);
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
@@ -2388,38 +2426,50 @@ font-family: 'Helvetica63-m';
 #search input[type=search] {
   position: absolute;
   top: 50%;
-  width: 100%;
+  width: 40%;
   color: white;
   background: rgba(0, 0, 0, 0);
-  font-size: 60px;
+  font-size: 40px;
   font-weight: 300;
   text-align: center;
-  border: 0px;
+  border-bottom: 1px solid #fff !important;
   margin: 0px auto;
   margin-top: -51px;
   padding-left: 30px;
+  border: none;
+  left: 0;
+  right: 0;
   padding-right: 30px;
   outline: none;
 }
 #search .btn {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 51%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 11%;
   margin-top: 61px;
-  margin-left: -45px;
-  background-color: limegreen;
+  /* margin-left: -45px; */
+  background-color: rgb(255 255 255);
   border: black;
+  color: #000;
+  font-size: 20px;
+  padding: 10px 40px;
+  font-family: 'Helvetica73-b';
+  border-radius: 50px;
 }
 #search .close {
   position: fixed;
-  top: 15px;
-  right: 15px;
+  top: 25px;
+  right: 25px;
   color: #fff;
-  background-color: limegreen;
-  border-color: green;
+  background-color: transparent;
   opacity: 1;
-  padding: 10px 17px;
-  font-size: 27px;
+  padding: 0px 17px;
+  border: none;
+  border-radius: 60px;
+  font-size: 47px;
 }
 #search.open {
   -webkit-transform: translate(0px, 0px) scale(1, 1);
