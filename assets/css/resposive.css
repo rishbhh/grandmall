@@ -99,6 +99,9 @@
 } */
 
 @media screen and (max-width:992px) {
+  .p-10 {
+    padding-top: 50%;
+}
   .nav-drill{
     display: block;
   }
@@ -112,6 +115,7 @@
     width: 100%;
     padding: 10px 20px;
     z-index: 9;
+    background: #0E0E0E;
   }
   .mobile-h.fixed-top{
     background: #0E0E0E;
