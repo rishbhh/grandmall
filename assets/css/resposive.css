@@ -16,6 +16,13 @@
     }
 }
 @media screen and (max-width:1440px) {
+  .subscribe .cl {
+    position: absolute;
+    top: unset;
+    right: 23%;
+    bottom: -16px;
+    z-index: 2;
+  }
     header .navbar .navbar-nav .nav-item {
         padding: 23px 20px;
     }

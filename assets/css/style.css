@@ -12,6 +12,11 @@
   font-family: "Helvetica73-b";
   src: url("/assets/fonts/Helvetica73-Boldextended.woff") format('woff');
 }
+@font-face {
+  font-family: "Helvetica53";
+  src: url("/assets/fonts/Helvetica53.woff") format('woff');
+}
+
 
 section{
   overflow: hidden;
@@ -31,9 +36,9 @@ img{
   width: 100%;
 }
 p{
-  font-size: 14px;
+  font-size: 16px;
   font-family: 'Inter', sans-serif;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
 }
 
 /* Navigation Css */
@@ -89,6 +94,9 @@ letter-spacing: 0.02em;
 header .sec-nav .navbar-nav .nav-item .nav-link{
   color: #000;
 }
+/* header .sec-nav .navbar-nav .nav-item .nav-link .fas{
+  color: #000;
+} */
 header .sec-nav.fixed-top  .navbar-nav .nav-item .nav-link{
   color: #fff;
 }
@@ -212,10 +220,18 @@ header .navbar .navbar-nav .nav-item:hover .dropdown {
   transform: none;
 }
 
+header .navbar .navbar-nav > li.active > a,
+header .navbar .navbar-nav > li.active > a:focus {
+		cursor: default;
+	  color: #fff;
+    background-color: #75A319;
+    border-style: none;
+}
 
 
-
-
+.current_link{
+  color: red;
+}
 
 
 
@@ -264,11 +280,10 @@ color: #FFFFFF;
 }
 .hero-rtext h6{
     font-style: normal;
-font-weight: 500;
 font-size: 20px;
-letter-spacing: 0.03em;
+letter-spacing: 0.2px;
 color: #FFFFFF;
-font-family: "Helvetica63-m";
+font-family: "Helvetica53";
 line-height: 1.6;
 }
 .hero-rtext a{
@@ -1210,7 +1225,7 @@ margin-bottom: 50px;
 }
 .cl p span img{
   animation:none;
-  width: 60px;
+  width: 90px;
 
 }
 .mini-heading{
@@ -1249,6 +1264,11 @@ font-weight: 300;
 }
 .get-in .row{
   align-items: center;
+  background: lavender;
+}
+.get-in .row .col-lg-4{
+  padding-left: 0;
+  padding-right: 0;
 }
 .get-content{
   text-align: center;
@@ -1279,11 +1299,12 @@ background: #F0A238;
 position: relative;
 padding: 10% 10%;
 }
+
 .subscribe .cl {
   position: absolute;
   top: unset;
-  right: 23%;
-  bottom: -16px;
+  right: 17%;
+  bottom: -10px;
   z-index: 2;
 }
 .subscribe .cl p {
@@ -1424,6 +1445,8 @@ letter-spacing: 1px;
   font-family: 'Inter';
   font-weight: 300;
   color: #FFFFFF;
+  font-size: 18px;
+  margin-bottom: 0;
   letter-spacing: 1px;
 }
 .bottom-footer{
