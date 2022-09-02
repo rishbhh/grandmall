@@ -2258,7 +2258,8 @@ font-family: 'Helvetica63-m';
 .overlay:hover .bottom-content{
   position: absolute;
   bottom: 10%;
-  left: 20%;
+  left: 0%;
+  text-align: center;
 }
 
 /* ========== Offer Section End ============ */
