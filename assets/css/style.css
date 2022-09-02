@@ -218,14 +218,31 @@ header .navbar .navbar-nav .nav-item:hover .dropdown {
   -webkit-transform: none;
   -ms-transform: none;
   transform: none;
+}header .navbar .navbar-nav > li a{
+  position: relative;
 }
 
-header .navbar .navbar-nav > li.active > a,
-header .navbar .navbar-nav > li.active > a:focus {
+header .navbar .navbar-nav > li> a::after{
+  content: '';
+  position: absolute;
+  background: rgb(255, 255, 255);
+  height: 2px;
+  width: 0%;
+  bottom: -5px;
+  left: 0;
+  transition: 0.3s all ease-in-out;
+
+}
+header .sec-nav .navbar-nav > li > a::after{
+  background: rgb(0, 0, 0);
+}
+header .sec-nav.fixed-top .navbar-nav > li > a::after {
+  background: rgb(255, 255, 255);
+}
+header .navbar .navbar-nav > li.active > a:after,header .navbar .navbar-nav > li:hover > a:after,
+header .sec-nav .navbar-nav > li:hover > a::after,header .sec-nav.fixed-top .navbar-nav > li:hover > a::after,header .sec-nav.fixed-top .navbar-nav > li.active > a::after {
 		cursor: default;
-	  color: #fff;
-    background-color: #75A319;
-    border-style: none;
+	 width: 100%;
 }
 
 
@@ -2235,7 +2252,7 @@ font-family: 'Helvetica63-m';
   position: absolute;
   left: 0%;
   bottom: 10%;
-  z-index: 999;
+  z-index: 1;
 }
 
 .overlay:hover .bottom-content{
@@ -2478,4 +2495,8 @@ font-family: 'Helvetica63-m';
   -ms-transform: translate(0px, 0px) scale(1, 1);
   transform: translate(0px, 0px) scale(1, 1);
   opacity: 1;
+}
+.navbar-nav a.active {
+  font-weight: bold;
+  color: red;
 }
